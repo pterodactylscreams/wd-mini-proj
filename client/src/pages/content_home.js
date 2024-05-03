@@ -1,4 +1,4 @@
-import modal from "../pictures/modal.png";
+import model from "../pictures/modal.png";
 import compact from "../pictures/compact.jpeg";
 import eyeliner from "../pictures/eyeliner.jpeg";
 import nailpaint from "../pictures/nailpaint.jpeg";
