@@ -1,794 +1,481 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=serif:wght@300'); */
+
+/* Global Styles */
 * {
     margin: 0;
-    font-family: "serif";   
+    font-family: 'serif';
 }
 
-body 
-{
-  overflow-x: hidden;    
-}
-.homepage 
-{
-  position: sticky;
-  top: 0;
-}
-.homepage a:nth-child(1)
-{
-  padding-bottom: 15px;
-  border-bottom-style: solid;
-  border-bottom-width: 3.1px;
-  width: fit-content;
+body {
+    overflow-x: hidden;    
 }
 
-.mainContent 
-{
-  background-color: rgb(245, 69, 125);
-  display: flex;
-  /* margin-top: 3%; */
-}
-.left 
-{
-  background-color:rgb(245, 69, 125) ;
-  height: 600px;
-}
-.left img 
-{
-  padding-left: 7%;
-  height: 600px;
-  width: 800px;
-  /* position: absolute; */ 
-}
-.content 
-{
-  background-color: rgb(245, 69, 125);
-  margin-left: 12%;
-  height: 500px;
-  width: 1000px;
-  /* position: absolute; */
-  text-align: center;
-  /* box-shadow: 5px 5px 5px black; */
-  
+/* Homepage Styles */
+.homepage, .signuppage, .loginpage, .homeafterpage {
+    position: sticky;
+    top: 0;
 }
 
-.content h1 
-{
-  text-align: centre;
-  padding-right: 25%;
-  padding-top: 7%;
-  font-size: 130px;
-  letter-spacing: 7px;
+.homepage a:nth-child(1) {
+    padding-bottom: 15px;
+    border-bottom: 3.1px solid;
+    width: fit-content;
 }
 
-.content h1:nth-child(2)
-{
-  /* text-align: right; */
-  padding-right: 26%;
-  padding-top: 2%;
-  font-size: 130px;
-  letter-spacing: 7px;
+.mainContent {
+    /* background-color: rgb(245, 69, 125); */
+    display: flex;
+}
+
+.left {
+    /* background-color: rgb(245, 69, 125); */
+    height: 600px;
+    width: auto;
+}
+
+.left img {
+    padding-left: 15%;
+    height: auto;
+    width: 20em;
+}
+
+.content {
+    background-color: rgb(245, 69, 125);
+    margin-left: 12%;
+    height: 500px;
+    width: 1000px;
+    text-align: center;
+}
+
+.content h1 {
+    text-align: center;
+    padding-right: 25%;
+    padding-top: 7%;
+    font-size: 130px;
+    letter-spacing: 7px;
+}
+
+.content h1:nth-child(2) {
+    padding-right: 26%;
+    padding-top: 2%;
+    font-size: 130px;
+    letter-spacing: 7px;
 }
 
 .content p {
-  /* text-align: right; */
-  padding-right: 28%;
-  padding-top: 5%;
-  font-size: 21px;
+    padding-right: 28%;
+    padding-top: 5%;
+    font-size: 21px;
 }
 
-.content button 
-{
-  place-items: centre;
-  margin-right: 30%;
-  margin-top: 5%;
-  background-color: black;
-  color: whitesmoke;
-  border: none;
-  width: 150px;
-  height: 40px;
-  font-size: 20px;
+.content button {
+    margin-right: 30%;
+    margin-top: 5%;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
 }
 
-.content button:hover 
-{
-  color: black;
-  background-color: whitesmoke;
-  width: 170px;
-  height: 45px;
-  font-size: 25px;
+.content button:hover {
+    color: black;
+    background-color: whitesmoke;
+    width: 170px;
+    height: 45px;
+    font-size: 25px;
 }
 
-.navbar 
-{
-  position: sticky;
-  top: 0;
-  background-color: white;
-  display: flex;
-  height: 50px;
-  padding-top: 1%;
-  box-shadow: 3px 3px 5px rgb(245, 69, 125);
-}
-.navbar h1 
-{
-  font-family: Tangerine;
-}
-.logo h1 
-{
-  vertical-align: middle;
-  color: rgb(245, 69, 125);
-  padding-left: 20%;
-  font-size: 30px;
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    height: 50px;
+    padding-top: 1%;
+    box-shadow: 3px 3px 5px rgb(245, 69, 125);
 }
 
-.links 
-{
-  padding-top: 0.5%;
-  font-size: 19px;
-  padding-left: 20%;
-  display: flex;
-  padding-bottom: 10px;
+.navbar h1 {
+    font-family: Tangerine;
 }
 
-.links a 
-{
-  text-decoration: none;
-  justify-content: space-between;
-  margin-left: 25px;
-  /* display:block; */
-  color: black;
-  
-}
-.links a:hover 
-{
-  color: rgb(245, 69, 125) ;
-}
-.links p 
-{
-  text-decoration: none;
-  justify-content: space-between;
-  padding-left: 20px;
-  color: black;
+.logo h1 {
+    vertical-align: middle;
+    color: rgb(245, 69, 125);
+    padding-left: 20%;
+    font-size: 30px;
 }
 
-.links span 
-{
-  margin-left: 25px;
+.links {
+    padding-top: 0.5%;
+    font-size: 19px;
+    padding-left: 20%;
+    display: flex;
+    padding-bottom: 10px;
 }
 
-
-.basket 
-{
-  padding-left: 25%;
-}
-.basket img 
-{
-  width: 40px;
-  height: 40px;
+.links a, .links p {
+    text-decoration: none;
+    margin-left: 25px;
+    color: black;
 }
 
-.bestselling 
-{
-  padding-top: 3%;
-  background-color: white; 
+.links a:hover {
+    color: rgb(245, 69, 125);
 }
 
-.bestselling h2 
-{
-  text-align: center;
-  padding-bottom: 3%;
-  font-size: 30px;
+.links span {
+    margin-left: 25px;
 }
 
-.products 
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; /* Adjust as needed */
-  padding: 1%;
-  padding-left: 2%;
-  padding-bottom: 5%;
-}
-.products .nailpaints .cards 
-{
-  padding-left: 4%;
+.basket {
+    padding-left: 25%;
 }
 
-.products .eyeliners .cards 
-{
-  padding-left: 2%;
+.basket img {
+    width: 40px;
+    height: 40px;
 }
 
-.products .compacts .cards 
-{
-  padding-left: 1%;
-}
-.cards .image img
-{
-  width: 500px;
-  height: 400px;
-  /* border: 1px solid rgb(245, 69, 125); */
-  box-shadow: 3px 1px 1px 3px rgb(245, 69, 125);
-  border-radius: 15px;
+/* Bestselling Styles */
+.bestselling {
+    padding-top: 3%;
+    background-color: white; 
 }
 
-.cards img:hover 
-{
-  cursor: pointer;
+.bestselling h2 {
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 30px;
 }
 
-.cards .name 
-{
-  padding-top: 2.5%;
-  /* padding-left: 1.5%; */
-  display: flex;
+/* Products Styles */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1%;
+    padding-left: 2%;
+    padding-bottom: 5%;
 }
 
-.cards .name p 
-{
-  margin-left: 25%;
-  font-size: 17px;
+.products .cards .image img {
+    width: 500px;
+    height: 400px;
+    box-shadow: 3px 1px 1px 3px rgb(245, 69, 125) ;
+    border-radius: 15px;
 }
 
-.cards .name img 
-{
-  height: 20px;
-  width: 20px;
-  margin-left: 2%;
-}
-.cards .name p:hover 
-{
-  color: rgb(245, 69, 125);
-  cursor: pointer;
-  font-size: 20px;
+.products .cards img:hover {
+    cursor: pointer;
 }
 
-.cards .name h3 
-{
-  padding-left: 1.5%;
-  font-weight: 400;
+.cards .name {
+    padding-top: 2.5%;
+    display: flex;
+}
+
+.cards .name p {
+    margin-left: 25%;
+    font-size: 17px;
+}
+
+.cards .name img {
+    width: 20px;
+    height: auto;
+    margin-left: 2%;
+}
+
+.cards .name p:hover {
+    color: rgb(245, 69, 125);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cards .name h3 {
+    padding-left: 1.5%;
+    font-weight: 400;
 } 
 
-.cards .price 
-{
-  padding-top: 2%;
-  padding-bottom: 3%;
-  padding-left: 1.5%;
-  display: flex;
+.cards .price {
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 1.5%;
+    display: flex;
 }
 
-.cards .price h3 
-{
-  font-weight: 400;
+.cards .price h3 {
+    font-weight: 400;
 }
 
-.cards .price h3:nth-child(3)
-{
-  padding-left: 2%;
-  text-decoration:line-through;
+.cards .price h3:nth-child(3) {
+    padding-left: 2%;
+    text-decoration: line-through;
 }
 
-.cards .price h3:nth-child(2)
-{
-  padding-left: 2%;
+.cards .price h3:nth-child(2) {
+    padding-left: 2%;
 }
 
-.footer 
-{
-  background-color: rgb(245, 69, 125);
-  opacity: 75%;
-  display: flex;
-  width: 100%;
+/* Footer Styles */
+.footer {
+    background-color: rgb(245, 69, 125);
+    opacity: 75%;
+    display: flex;
+    width: 100%;
 }
 
-.footer .about h2 
-{
-  text-align: center;
-  opacity: 100%;
-  padding-top: 2%;
-  padding-left: 30%;
-  display: flex;
+.footer .about h2 {
+    text-align: center;
+    opacity: 100%;
+    padding-top: 2%;
+    padding-left: 30%;
+    display: flex;
 }
 
-.footer .info 
-{
-  display: flex;
-  padding: 2%;
-  padding-left: 10%;
+.footer .info {
+    display: flex;
+    padding: 2%;
+    padding-left: 10%;
 }
 
-.footer .our-team
-{
-  padding-left: 20%;
-  width: 55%;
+.footer .our-team {
+    padding-left: 20%;
+    width: 55%;
 }
 
-.footer .our-team h4 
-{
-  text-align: center;
-  /* padding-left: 10%; */
-  padding-right: 7%;
-  padding-bottom: 2%;
-  
+.footer .our-team h4 {
+    text-align: center;
+    padding-right: 7%;
+    padding-bottom: 2%;
 }
 
-.footer .image-products img 
-{
-  padding-top: 2%;
-  width: 500px;
-  height: auto;
-  padding-left: 5%;
+.footer .image-products img {
+    padding-top: 2%;
+    width: 500px;
+    height: auto;
+    padding-left: 5%;
 }
 
-/* signup */
-
-.signuppage a:nth-child(5)
-{
-  padding-bottom: 6px;
-  border-bottom-style: solid;
-  border-bottom-width: 3.1px;
-  width: fit-content;
-}
-.signuppage 
-{
-  position: sticky;
-  top: 0;
-}
-.signupdiv 
-{
-  padding-top: 2%;
-  display: flex;
-}
-.signup 
-{
-  /* margin-left: 650px;  */
-  /* margin-left: 35%; */
-  width: 540px;
-  height: 0px;
-  /* width:auto; */
-  /* background-color:whitesmoke; */
-  /* margin-top: 150px; */
-  /* margin-top: 8%; */
-  margin: auto;
-  margin-top: 5%;
+/* Signup & Login Styles */
+.signup, .login {
+    width: 540px;
+    margin: auto;
+    margin-top: 5%;
 }
 
-.signup h2
- {
-   color: black;
-   margin-left: 24%;
-   font-size: 50px;
-   padding-top: 20px;
-   /* padding-right: 15px; */
- }
-
- .signup label 
- {
-  color: black;
-  text-align: center;
-  margin-left: 15%;
-  padding-left: 4.5%;
-  margin-top: auto;
-  padding-top: 45px;
-  display: flex;
-  font-weight: 500;
-  font-size: 22px;
-
- }
-
- .signup input
- {
-   /* width: 100%;
-   margin-left: 45%;
-   margin-right: 80%; */
-
-   width: 350px;
-   margin-left: 15%;
-   border-radius: 7px;
-   box-shadow: 10px, 3px, 5px black;
-   border: 1px solid #4e4b4b;
-   display: block;
-   /* margin-top: 10px; */
-   margin-top: 3%;
-   margin-left: 19%;
-   height: 32px;
-   font-style: normal;  
-   font-weight: 400;
-   font-size: 18px;
-
- }
-
- .signup button
- {
-   background-color: black;
-   font-size: 17px;
-   width: 100px;
-   height: 35px;
-   border-radius: 10px;
-   border: none;
-   margin-left: 40%;
-   margin-top: 7%;
-   color: #ffffff;
-   font-weight: bold;
-   cursor:pointer;
-   /* margin-bottom: 40px; */
-   margin-bottom: 4%;
- }
-
- .signup button:hover{
-  background-color: white;
-  color: black; 
-}
-
-.signup img 
-{
-  /* padding-top: 30px; */
-  padding-top: 6%;
-  padding-left: 42%;
-}
-
-.signup  a
-{
-  margin-left: 15%;
-  /* margin-top: 15%; */
-  /* margin-bottom: 15px; */
-  text-decoration: none;
-  font-size: 23px;
-  color: white;
-}
-
-div.error {
-  
-  padding: 10px;
-  background: white;
-  border: 1px solid var(--error);
-  color: var(--error);
-  border-radius: 10px;
-  margin-top: 1%;
-  text-align: center;
-  opacity: 50%;
-}
-
-.signup a:hover 
-{
-  color: black;
-}
-
-.loginpage 
-{
-  position: sticky;
-  top: 0;
-}
-.logindiv 
-{
-  padding-top: 2%;
-  display: flex;
-}
-.login 
-{
-  /* margin-left: 650px;  */
-  /* margin-left: 35%; */
-  width: 540px;
-  height: 0px;
-  /* width:auto; */
-  /* background-color:whitesmoke; */
-  /* margin-top: 150px; */
-  /* margin-top: 8%; */
-  margin: auto;
-  margin-top: 5%;
-}
-
-.login h2
- {
-   color: black;
-   margin-left: 24%;
-   font-size: 50px;
-   padding-top: 20px;
-   /* padding-right: 15px; */
- }
-
- .login label 
- {
-  color: black;
-  text-align: center;
-  margin-left: 15%;
-  padding-left: 4.5%;
-  margin-top: auto;
-  padding-top: 45px;
-  display: flex;
-  font-weight: 500;
-  font-size: 22px;
-
- }
-
- .login input
- {
-   /* width: 100%;
-   margin-left: 45%;
-   margin-right: 80%; */
-
-   width: 350px;
-   margin-left: 15%;
-   border-radius: 7px;
-   box-shadow: 10px, 3px, 5px black;
-   border: 1px solid #4e4b4b;
-   display: block;
-   /* margin-top: 10px; */
-   margin-top: 3%;
-   margin-left: 19%;
-   height: 32px;
-   font-style: normal;  
-   font-weight: 400;
-   font-size: 18px;
-
- }
-
- .login button
- {
-   background-color: black;
-   font-size: 17px;
-   width: 100px;
-   height: 35px;
-   border-radius: 10px;
-   border: none;
-   margin-left: 40%;
-   margin-top: 7%;
-   color: #ffffff;
-   font-weight: bold;
-   cursor:pointer;
-   /* margin-bottom: 40px; */
-   margin-bottom: 4%;
- }
-
- .login button:hover{
-  background-color: white;
-  color: black; 
-}
-
-.login a
-{
-  margin-left: 10%;
-  /* margin-top: 15%; */
-  /* margin-bottom: 15px; */
-  text-decoration: none;
-  font-size: 23px;
-  color: white;
-}
-
-div.error {
-  
-  padding: 10px;
-  background: white;
-  border: 1px solid var(--error);
-  color: var(--error);
-  border-radius: 10px;
-  margin-top: 1%;
-  text-align: center;
-  opacity: 50%;
-}
-
-.login a:hover 
-{
-  color: black;
-}
-
-/* contact us */
-
-.contactpage a:nth-child(4)
-{
-  padding-bottom: 6px;
-  border-bottom-style: solid;
-  border-bottom-width: 3.1px;
-  text-underline-offset: 3px;
-  width: fit-content;
-}
-.contactdiv 
-{
-  padding-top: 5%;
-  display: flex;
-}
-
-.contact {
-  /* margin-left: 650px;  */
-  /* margin-left: 35%; */
-  width: 500px;
-  height: 500px;
-  /* width:auto; */
-  /* margin-top: 150px; */
-  margin: auto;
-  margin-top: 5%;
-  /* margin: 10px;
-  padding:10px;
-  box-sizing: border-box;
-  color: #FFFFF0;
-  text-align: center; */
-  
-  }
-  
-  .contact form {
-    /* text-align: center; */
-    display: flexbox;
-    /* box-shadow: 1px 1px 3px 2px #ddd; */
-    margin : 40px auto;
-    /* max-width: 600 px; */
-    padding: 50px;
-  }
-  
-  .contact form input, textarea {
-   width: 300px;
-   margin-left: 10%;
-   border-radius: 7px;
-   box-shadow: 10px, 3px, 5px black;
-   border: 1px solid black;
-   color: black;
-   display: block;
-   margin-top: 10px;
-   height: 25px;
-   font-style: normal;  
-   padding: 8px;
-   cursor: pointer;
-   font-weight: 500;
-   font-size: 17px;
-  }
-
-
-  .contact form h1{
+.signup h2, .login h2 {
     color: black;
-   margin-left: 22%;
-   font-size: 40px;
-   padding-top: 20px;
-   /* padding-right: 15px; */
-   padding-bottom: 10px;
-  }
+    margin-left: 24%;
+    font-size: 50px;
+    padding-top: 20px;
+}
 
-  
-  .contact button{
+.signup label, .login label {
+    color: black;
+    text-align: center;
+    margin-left: 15%;
+    padding-left: 4.5%;
+    margin-top: auto;
+    padding-top: 45px;
+    display: flex;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.signup input, .login input {
+    width: 350px;
+    margin-left: 15%;
+    border-radius: 7px;
+    box-shadow: 10px 3px 5px black;
+    border: 1px solid #4e4b4b;
+    display: block;
+    margin-top: 3%;
+    margin-left: 19%;
+    height: 32px;
+    font-style: normal;  
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.signup button, .login button {
     background-color: black;
-   font-size: 17px;
-   width: 100px;
-   height: 35px;
-   border-radius: 7px;
-   border: rgb(30, 47, 240);
-   margin-left: 40%;
-   margin-top: 7%;
-   color: #ffffff;
-   font-weight: bold;
-   cursor:pointer;
-   margin-bottom: 40px;
-   margin-top: 40px;
-  }
+    font-size: 17px;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 40%;
+    margin-top: 7%;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 4%;
+}
 
-  .contact button:hover 
-  {
+.signup button:hover, .login button:hover {
+    background-color: white;
+    color: black; 
+}
+
+.signup img, .login img {
+    padding-top: 6%;
+    padding-left: 42%;
+}
+
+.signup a, .login a {
+    margin-left: 15%;
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+}
+
+.signup a:hover, .login a:hover {
+    color: black;
+}
+
+/* Contact Styles */
+.contact {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.contact form {
+    display: flexbox;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+.contact form input, textarea {
+    width: 300px;
+    margin-left: 10%;
+    border-radius: 7px;
+    box-shadow: 10px 3px 5px black;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    margin-top: 10px;
+    height: 25px;
+    font-style: normal;  
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.contact form h1 {
+    color: black;
+    margin-left: 22%;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contact button {
+    background-color: black;
+    font-size: 17px;
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+    border: rgb(30, 47, 240);
+    margin-left: 40%;
+    margin-top: 7%;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.contact button:hover {
     background-color: cornsilk;
     color: black; 
-  }
-
-
-
+}
 
 .hoverContents {
     display: none;
     position: absolute;
     border-top: 2px solid black;
-    /* padding: 10px; */
     padding-top: 1%;
     background-color: #ffffff;
-    /* border: 1px solid #ffffff; */
-    /* border-radius: 5px; */
-    /* position:absolute;
-    background-color: white;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-    z-index:1; */
-    /* box-shadow: 1px 3px 5px gray; */
     width: 800px;
     z-index: 1;
-    /* color: black; */
-    /* margin-top: 1%; */
     margin: 0.5%;
 }
 
-.hoverContents .nails
-{
-  padding-left: 3%;
+.hoverContents .nails, .hoverContents .face {
+    padding-left: 3%;
 }
 
-.hoverContents .face
-{
-  padding-left: 3%;
+.hoverContents p {
+    padding-bottom: 5%;
 }
 
-.hoverContents p
-{
-  padding-bottom: 5%;
-}
-.hoverContents a
-{
-  /* padding-bottom: 1%; */
-   position: relative;
-  font-size: 19px;
+.hoverContents a {
+    font-size: 19px;
+    position: relative;
 }
 
-
-.hoverContents a:hover
-{
-cursor: pointer;
-color: black;
-background-color: pink;
-border-bottom:1px solid black;
+.hoverContents a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: pink;
+    border-bottom: 1px solid black;
 }
 
-.onhover:hover .hoverContents{
-display: flex;
+.onhover:hover .hoverContents {
+    display: flex;
 }
 
-/* backend */
-
-.homeafterpage .navbar 
-{
-  position: sticky;
-  top: 0;
-}
-.homeafterpage .navbar .links
-{
-  margin-left: 35%;
+/* Home After Login Styles */
+.homeafterpage .navbar {
+    position: sticky;
+    top: 0;
 }
 
-.homeafterpage .navbar .links button 
-{
-  margin-top: -7%;
-  height: 35px;
-  width: 100px;
-  font-size: 21px;
-  background-color: rgb(245, 69, 125);
-  border-radius: 5px;
-  color: white;
-  border: none;
-  font-weight: 500;
+.homeafterpage .navbar .links {
+    margin-left: 35%;
 }
 
-/* .homeafterpage .navbar .links button:hover
-{
-  color: black;
-  background-color: white;
-  cursor: pointer;
-}
-.homeafterpage .navbar .links span 
-{
-  margin-left: 55%;
-  color: rgb(245, 69, 125);
-  text-transform:uppercase;
-  font-family: 500;
-  
-} */
-
-.home 
-{
-  background-color: white;
-  margin-top: 5%;
+.homeafterpage .navbar .links button {
+    margin-top: -7%;
+    height: 35px;
+    width: 100px;
+    font-size: 21px;
+    background-color: rgb(245, 69, 125);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: 500;
 }
 
-.home .nailpaints 
-{
-  margin-left: 3%
+/* Home Styles */
+.home {
+    background-color: white;
+    margin-top: 5%;
 }
 
-.home .nailpaints p
-{
-  text-decoration: none;
-  color: black;
-  border-bottom: none;
-  font-size: 150%;
-  padding-bottom: 2%;
+.home .nailpaints {
+    margin-left: 3%;
 }
 
-.home .nailpaints .cards 
-{
-  display: flex;
+.home .nailpaints p {
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+    font-size: 150%;
+    padding-bottom: 2%;
 }
 
-.home .nailpaints .cards .second 
-{
-  margin-left: 3%;
+.home .nailpaints .cards {
+    display: flex;
+}
+
+.home .nailpaints .cards .second {
+    margin-left: 3%;
 }

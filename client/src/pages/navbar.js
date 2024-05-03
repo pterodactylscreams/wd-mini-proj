@@ -107,7 +107,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <a href = "/tips">Makeup Tips</a>
+            {/* <a href = "/tips">Makeup Tips</a> */}
             <a href = "/contactus">Contact Us</a>
             <a href = "/signup">My Account</a>
             
