@@ -36,7 +36,7 @@ const ContentHome = () => {
         <div className="content">
           <h1>MEGA</h1>
           <h1>SALE</h1>
-          <p>Everything At 30% Off</p>
+          <p>Everything at 30% Off</p>
           <Link to="/login">
             <button>SHOP NOW</button>
           </Link>
@@ -87,7 +87,7 @@ const ContentHome = () => {
               <p>
                 Starting journey from a single proprietor, having reached this position is incomplete without the
                 hard work, passion, and dedication of the entire team. The team on the stores as well as the backend
-                are a bunch of incredible people, working hard day and night to make UnLeash a success.
+                are a bunch of incredible people, working hard day and night to make Flâner a success.
               </p>
             </div>
           </div>

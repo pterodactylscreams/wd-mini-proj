@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav className="navbar">
 
            <div className="logo">          
-              <h1>UnLeash</h1>
+              <h1>Flâner</h1>
            </div>
         
           

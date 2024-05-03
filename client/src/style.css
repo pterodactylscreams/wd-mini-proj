@@ -40,9 +40,9 @@ body {
 }
 
 .content {
-    background-color: rgb(245, 69, 125);
+    /* background-color: rgb(245, 69, 125); */
     margin-left: 12%;
-    height: 500px;
+    height: 200px;
     width: 1000px;
     text-align: center;
 }
@@ -254,10 +254,10 @@ body {
 }
 
 .footer .image-products img {
-    padding-top: 2%;
-    width: 500px;
+    /* padding-top: 2%; */
+    width: 600px;
     height: auto;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 }
 
 /* Signup & Login Styles */
